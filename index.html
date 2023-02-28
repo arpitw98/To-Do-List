@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6eca9af6e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Arpit's Day to Day Activities List</h1>
+
+            <!-- TextBox to add items to the to do list -->
+
+            <form id="add-task">
+
+                <input type="text" id="type-list" placeholder="Type your todo list">
+
+                <div class="search-box-images">
+
+                    <i class="fa-sharp fa-regular fa-file-lines"></i>
+                    <button id="add-task-button">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="complete">
+
+                <div class="arrow">
+
+                    <p style="display:inline-block">Complete all tasks</p>
+                </div>
+
+                <div class="clear">
+
+                    <p>Clear Completed</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- to do list / list items container -->
+
+        <div id="task-list">
+
+            <ul>
+
+                <li>
+
+                    <div>
+
+                        <span>
+                            <input type="checkbox" class="task-list-check">
+                            <p class="task-name">Drink Coffee</p>
+                        </span>
+
+                    </div>
+
+                    <span class="delete-btn">
+                        Delete
+                    </span>
+                </li>
+
+                <li>
+                    <div>
+                        <span>
+                            <input type="checkbox" class="task-list-check">
+                            <p class="task-name">Drink Milk</p>
+                        </span>
+                    </div>
+                    <span class="delete-btn">
+                        Delete
+                    </span>
+                </li>
+
+                <li>
+                    <div>
+                        <span>
+                            <input type="checkbox" class="task-list-check">
+                            <p class="task-name">Practice JavaScript</p>
+                        </span>
+                    </div>
+                    <span class="delete-btn">
+                        Delete
+                    </span>
+                </li>
+
+                <li>
+                    <div>
+                        <span>
+                            <input type="checkbox" class="task-list-check">
+                            <p class="task-name">Practice HTML, CSS</p>
+                        </span>
+                    </div>
+                    <span class="delete-btn">
+                        Delete
+                    </span>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <hr>
+
+        <div class="tasks-left">
+
+            <!-- to keep track of number of tasks in the list -->
+            <p><span id="numberOfTask" style="font-weight:bolder;">4</span> tasks left</p>
+
+            <div class="left-tasks">
+                <p>All</p>
+                <p>Uncompleted</p>
+                <p>Completed</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
